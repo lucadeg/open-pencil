@@ -1,11 +1,9 @@
+
 name: Build
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write
   id-token: write

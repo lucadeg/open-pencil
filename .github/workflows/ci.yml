@@ -1,13 +1,9 @@
+
 name: CI
 
 on:
-  pull_request:
-    branches: [master]
-    paths-ignore:
-      - 'packages/docs/**'
-      - 'openspec/**'
-      - '*.md'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true

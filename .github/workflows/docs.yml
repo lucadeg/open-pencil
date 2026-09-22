@@ -1,12 +1,10 @@
+
 name: Deploy docs
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - 'packages/docs/**'
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   deploy:
     runs-on: ubuntu-latest

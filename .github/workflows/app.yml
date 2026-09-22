@@ -1,14 +1,10 @@
+
 name: Deploy app
 
 on:
-  push:
-    branches: [master]
-    paths-ignore:
-      - 'packages/docs/**'
-      - 'openspec/**'
-      - '*.md'
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   deploy:
     runs-on: ubuntu-latest
